@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+
+body {
+    margin: 0;
+    font-family: 'Inconsolata';
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(0deg, #42067a, #5a1bcf, #23a6d5, #23d5ab);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 250px;
+}
+
+.header {
+    background-color:  rgb(62, 2, 119);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 60px;
+    height: 60px;
+    z-index: 1;
+    box-shadow: 0 10px 10px rgba(62,2,119,0.16), 0 3px 6px rgba(62,2,119,0.23);
+}
+
+.link-wrapper a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.link-wrapper a:hover {
+    color: rgb(6, 194, 194);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 150px auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side {
+    width: 50%;
+    height: 650px;
+    background-image: url(..//img/photo.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fff;
+    border-radius: 10px 50px;
+    box-shadow: 0 10px 10px rgba(62,2,119,0.16), 0 3px 6px rgba(62,2,119,0.23);
+}
+
+.right-side {
+    width: 50%;
+    min-height: 400px;
+    background-color:  rgb(62, 2, 119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 50px 10px;
+    color: white;
+    margin-left: -50px;
+    box-shadow: 0 10px 10px rgba(62,2,119,0.16), 0 3px 6px rgba(62,2,119,0.23);
+}
+
+.right-side h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.right-side p {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.right-side a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(6, 194, 194);
+    color: rgb(62, 2, 119);
+    padding: 20px 50px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 10px 30px;
+    font-size: 18px;
+    box-shadow: inset 0 0 0 0 #fff;
+}
+
+.right-side a:hover {
+    transition: 0.5s;
+    box-shadow: inset 300px 0 0 0 #fff;
+}
+
+span {
+    color: rgb(6, 194, 194);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+   
+.right-side i:hover {
+    color: #fff;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 150px 20px 50px;
+    }    
+    .left-side {
+        width: 100%;
+    }
+    .right-side {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+
+}
+
+
